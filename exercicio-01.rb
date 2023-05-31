@@ -19,10 +19,15 @@ O itema adicional e o valor também será digitado pelo usuário.
 O percentual de desconto deverá ser dado no total do pedido.
 =end
 
-system("cls")
+#require 'byebug' // Para utilizar o debugger
+
+system 'cls'
+
+# debugger
+
 print "\n"
 puts "-" * 60
-puts "Sistema de Vendas do seu João"
+puts "Padaria Pão de Mel - Sistema de Vendas"
 puts "-" * 60
 print "\nInforme o nome do produto: "
 nomeProduto = gets.chomp
@@ -55,6 +60,7 @@ percentual = valorPercentual / 100
 valorDesconto = valorPedido * percentual
 valorFinal = valorPedido - valorDesconto
 
+system("cls")
 print "\n"
 puts "-" * 60
 puts "Informações do Pedido Gerado"
