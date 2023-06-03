@@ -24,17 +24,32 @@ while loop
     print "\nO preço da Banana é: R$ 8,00\n"
     print "\nDeseja verificar outro item? (S/N)"
     opcao = gets.chomp.upcase.strip
-    loop = opcao == "S" ? true : false
+    if opcao != "S"
+      system "cls"
+      print "\nEncerrando o Sistema...\n"
+      sleep 1
+      loop = false
+    end
   when 2
     print "\nO preço da Maçã é: R$ 10,00\n"
     print "\nDeseja verificar outro item? (S/N)"
     opcao = gets.chomp.upcase.strip
-    loop = opcao == "S" ? true : false
+    if opcao != "S"
+      system "cls"
+      print "\nEncerrando o Sistema...\n"
+      sleep 1
+      loop = false
+    end
   when 3
     print "\nO preço da Laranja é: R$ 5,00\n"
     print "\nDeseja verificar outro item? (S/N)"
     opcao = gets.chomp.upcase.strip
-    loop = opcao == "S" ? true : false
+    if opcao != "S"
+      system "cls"
+      print "\nEncerrando o Sistema...\n"
+      sleep 1
+      loop = false
+    end
   when 4
     system "cls"
     print "\nEncerrando o Sistema...\n"
